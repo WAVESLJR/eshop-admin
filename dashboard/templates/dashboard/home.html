@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Dashboard</h1>
+<p>Welcome, {{ user.username }}!</p>
+
+<ul>
+    <li><a href="{% url 'admin:index' %}">Go to Django Admin</a></li>
+    <li><a href="#">View Reports</a></li>
+    <li><a href="#">Manage Content</a></li>
+</ul>
+
+<p>Total Users: {{ user_count }}</p>
+<p>Total Articles: {{ article_count }}</p>
+{% endblock %}
