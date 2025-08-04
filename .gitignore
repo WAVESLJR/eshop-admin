@@ -1,10 +1,43 @@
-# Python-generated files
+# Python
 __pycache__/
-*.py[oc]
-build/
-dist/
-wheels/
-*.egg-info
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.egg
+*.log
 
-# Virtual environments
-.venv
+# Django specific
+db.sqlite3
+/media/
+staticfiles/
+*.pot
+
+# Environment
+.env
+.venv/
+env/
+venv/
+ENV/
+
+# macOS
+.DS_Store
+
+*.code-workspace
+
+# Byte-compiled / cache
+*.cache
+.pytest_cache/
+.coverage
+*.mo
+
+# Migration backups
+*/migrations/*.pyc
+*/migrations/__pycache__/
+
+# JetBrains IDE (if you ever use PyCharm)
+.idea/
+
+# uv (if using uv to manage Python)
+.uv/
